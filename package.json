@@ -1,0 +1,19 @@
+{
+  "name": "ecma-script6-course",
+  "version": "1.0.0",
+  "description": "entendiendo ecma script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marlonlavanda/ecma-script6-course.git"
+  },
+  "author": "Marlon Lavanda <marlonlavanda@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marlonlavanda/ecma-script6-course/issues"
+  },
+  "homepage": "https://github.com/marlonlavanda/ecma-script6-course#readme"
+}
