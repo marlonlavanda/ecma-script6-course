@@ -98,7 +98,7 @@ const square = (num) => num * num;
 
 const helloPromise = () => {
   return new Promise((resolve, reject) => {
-    if (true) {
+    if (false) {
       resolve("Todo posi mijin");
     } else {
       reject("Habla bien pelao");
@@ -110,3 +110,39 @@ helloPromise()
   .then((response) => console.log(response))
   .then(() => console.log("Confirma mijin"))
   .catch((error) => console.log(error));
+
+//Clases y herencia con es6
+
+class calculator {
+  constructor() {
+    this.valueA = 0;
+    this.valueB = 0;
+  }
+  sum(valueA, valueB) {
+    this.valueA = valueA;
+    this.valueB = valueB;
+    return this.valueA + this.valueB;
+  }
+}
+
+const calc = new calculator();
+console.log(calc.sum(2, 2));
+
+//importar funciones desde otro archivo con import ... from
+import { hello } from "./module";
+hello();
+
+//generator
+function* helloWorld() {
+  if (true) {
+    yield "Hello, ";
+  }
+  if (true) {
+    yield "World";
+  }
+}
+
+const generatorHello = helloWorld();
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
